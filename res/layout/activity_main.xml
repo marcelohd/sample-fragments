@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnStartFragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectedFragment"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/btnFragments01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectedFragment"
+            android:text="First" />
+
+        <Button
+            android:id="@+id/btnFragments02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectedFragment"
+            android:text="Second" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/palceHolder"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>
